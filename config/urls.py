@@ -12,9 +12,9 @@ from django.views import defaults as default_views
 urlpatterns = [
     url(r'^$', TemplateView.as_view(template_name='pages/home.html'), name='home'),
     url(r'^about/$', TemplateView.as_view(template_name='pages/about.html'), name='about'),
-    url(r'^resources/$', TemplateView.as_view(template_name='pages/resources.html'), name='resources')
+    url(r'^resources/$', TemplateView.as_view(template_name='pages/resources.html'), name='resources'),
     url(r'^contact/$', TemplateView.as_view(template_name='pages/contact.html'), name='contact'),
- ,
+
 
     # Django Admin, use {% url 'admin:index' %}
     url(settings.ADMIN_URL, admin.site.urls),
